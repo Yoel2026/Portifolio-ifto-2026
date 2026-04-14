@@ -1,56 +1,167 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <img src="https://portal.ifto.edu.br/imagens/identidade-visual/marca-ifto-assinatura-1.png/@@images/95dbd7f8-127a-4b60-a8dd-7fe49ff97cae.png" width="450" >
-    <title>Portifolio-IFTO</title>
-  </head>
-  <body>
-      <h1 class="title">Aluno: Yoel Jesus Lagares</h1>
-      <h2>Curso: Introdução de paginas web</h2>
-      <h3>Atividades do primeiro periodo </h3>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio IFTO</title>
+    <style>
       
-<ul>
-  <div style="border: 1px solid black">
-  <li>Aula 02 - Minha primeira página web</li>
-   <a href="https://yoel2026.github.io/Atividade1-primeira-pagina-web/">Página web </a>
-   <p>Data: 28/02/2026</p>
-   </div>
-   
-   <div style="border: 1px solid black">
-  <li>Aula 03 - Links e Imagens</li>
-   <p>Data: 03/03/2026</p>
-   <a href="https://yoel2026.github.io/site2026-html/">Site temático em HTML</a>
-   </div>
-   
-   <div style="border: 1px solid black">
-  <li>Aula 05 - Formatação de Elementos HTML</li>
-   <p>Data: 17/03/2026</p>
-   <a href="https://yoel2026.github.io/site-filme/">Site filme</a>
-   </div>
-   
-   <div style="border: 1px solid black">
-  <li>Aula 06 - Listas e Citações</li>
-   <p>Data: 25/03/2026</p>
-   <a href="https://yoel2026.github.io/Evolu-ao-das-tecnologias-de-redes-de-computadores-/"> Evolução das tecnologias</a>
-   </div>
-   
-   <div style="border: 1px solid black">
-  <li>Aula 07 - Tabelas</li>
-   <p>Data: 31/03/2026</p>
-   <a href="https://yoel2026.github.io/Tabela-Camisa-/">Tabela de Camisa</a>
-   </div>
-   
-   <div style="border: 1px solid black">
-  <li>Aula 08 - CSS</li>
-   <p>Data: 07/04/2026</p>
-   <a href="https://yoel2026.github.io/Site-Esporte-Basquete/">Site do esporte basquete </a>
-   </div>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-   <div style="border: 1px solid black">
-  <li>Aula 09 - Seletores CSS</li>
-   <p>Data: 14/04/2026</p>
-   <a href="https://yoel2026.github.io/-site-sobre-o-BYD-King/">Site sobre o BYD King </a>
-   </div>
-</ul>  
-  </body>
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.topo {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    color: black;
+}
+
+.topo img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #00aaff;
+    text-shadow: 0 0 15px #00aaff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #22c55e;
+    text-shadow: 0 0 15px #22c55e;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+    color: #94a3b8;
+}
+
+.card a {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #22c55e;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: white;
+}
+
+.destaque {
+    border: 2px solid #22c55e;
+}
+
+    </style>
+</head>
+<body>
+
+<header class="topo">
+    <img src="https://portal.ifto.edu.br/imagens/identidade-visual/marca-ifto-assinatura-1.png/@@images/95dbd7f8-127a-4b60-a8dd-7fe49ff97cae.png">
+    
+    <h1>Aluno:Yoel Jesus Lagares</h1>
+    <p><strong>Curso:</strong> Curso Superior de Tecnologia em Sistemas Para Internet</p>
+    <p><strong>Disciplina:</strong> Introdução a Construção de Páginas Web</p>
+    <p><strong>Semestre:</strong> 1º semestre</p>
+    <p><strong>Professor:</strong> Carlos Henrique</p>
+</header>
+
+<section class="container">
+    <h2>Portfólio das Atividades</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Aula 02</h3>
+            <p>Minha primeira página web</p>
+            <span>28/02/2026</span>
+            <a href="https://yoel2026.github.io/Atividade1-primeira-pagina-web/">Acessar</a>
+        </div>
+
+        <div class="card">
+            <h3>Aula 03</h3>
+            <p>Links e Imagens</p>
+            <span>03/03/2026</span>
+            <a href="https://yoel2026.github.io/site2026-html/">Acessar</a>
+        </div>
+
+        <div class="card">
+            <h3>Aula 05</h3>
+            <p>Formatação HTML</p>
+            <span>17/03/2026</span>
+            <a href="https://yoel2026.github.io/site-filme/">Acessar</a>
+        </div>
+
+        <div class="card">
+            <h3>Aula 06</h3>
+            <p>Listas e Citações</p>
+            <span>25/03/2026</span>
+            <a href="https://yoel2026.github.io/Evolu-ao-das-tecnologias-de-redes-de-computadores-/">Acessar</a>
+        </div>
+
+        <div class="card">
+            <h3>Aula 07</h3>
+            <p>Tabelas</p>
+            <span>31/03/2026</span>
+            <a href="https://yoel2026.github.io/Tabela-Camisa-/">Acessar</a>
+        </div>
+
+        <div class="card">
+            <h3>Aula 08</h3>
+            <p>CSS</p>
+            <span>07/04/2026</span>
+            <a href="https://yoel2026.github.io/Site-Esporte-Basquete/">Acessar</a>
+        </div>
+
+        <div class="card destaque">
+            <h3>Aula 09</h3>
+            <p>Seletores CSS (BYD King)</p>
+            <span>14/04/2026</span>
+            <a href="https://yoel2026.github.io/-site-sobre-o-BYD-King/">Acessar</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
 </html>
